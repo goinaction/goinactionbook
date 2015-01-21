@@ -123,7 +123,7 @@
 									</div>
 									<p>We've used Go to power web sites, API sites, worker processes, services, mobile applications, command-line tools and more.  Learn what works, what doesn't, and how to get the most from Go's concurrency features.</p>
 									<div class="buttons">
-										<a href="http://www.manning.com/ketelsen?a_aid=goinaction" target="_blank" class="btn">get it now</a>
+										<a href="http://manning.com/ketelsen/" target="_blank" class="btn">get it now</a>
 										<a href="#features" class="btn grey">learn more</a>
 									</div>
 								</div>
@@ -181,25 +181,25 @@
 
 						<!-- Feature -->
 						<div class="four columns feature">
-							<h2 data-from="0" data-to="2">2</h2>
+							<h2 data-from="0" data-to="8">8</h2>
 							<span>chapters complete</span>
 						</div>
 
 						<!-- Feature -->
 						<div class="four columns feature">
-							<h2 data-from="0" data-to="33530">33530</h2>
+							<h2 data-from="0" data-to="56958">56958</h2>
 							<span>words</span>
 						</div>
 
 						<!-- Feature -->
 						<div class="four columns feature">
-							<h2 data-from="0" data-to="1923">1923</h2>
-							<span>lines of example code</span>
+							<h2 data-from="0" data-to="100">100</h2>
+							<span>example code samples</span>
 						</div>
 
 						<!-- Feature -->
 						<div class="four columns feature">
-							<h2 data-from="0" data-to="489">489</h2>
+							<h2 data-from="0" data-to="5280">5280</h2>
 							<span>redbulls consumed</span>
 						</div>
 
@@ -382,16 +382,79 @@
 	</p>
 									</div>
 
+									<div class="showcase text active" data-showcase="chapter-3">
+										<h4>Chapter 3</h4>
+    <p>
+        In chapter 2, you got an overview of the syntax and language structure of Go. Now we're going to dive deeper into how Go code is organized, and how you interact with Go code.
+	</p>
+	<p>
+        Packages are a critical concept in Go. By grouping similar code into packages, you enable code reuse and control the use of the data inside the package.
+	</p>
+	<p>
+        Before we get into the particulars, you should already be familiar with the command prompt or system shell, and you should have Go installed according to the guidelines in the preface of this book. If you're ready, let's start by understanding what a package is and why it is important in the Go ecosystem.
+	</p>
+									</div>
+
+									<div class="showcase text active" data-showcase="chapter-4">
+										<h4>Chapter 4</h4>
+    <p>
+        It is difficult to write programs that don't need to store and read collections of data. If we use databases, files or access the web, we need a way to handle the data we are receiving and sending. Go has three different data structures that allow us to manage collections of data: Arrays, Slices and Maps. These data structures are baked into the language and used throughout the standard library. Once you learn how these data structures work, programming in Go will become fun, fast and flexible.
+	</p>
+									</div>
+
+									<div class="showcase text active" data-showcase="chapter-5">
+										<h4>Chapter 5</h4>
+    <p>
+        Types are the heart and soul of a programming language. Types define how you represent and work with data, and they shape the interactions that you have with your code. For many, the type system is what really endears them to a programming language. There are two fundamental pieces to Go's type system: concrete types and interfaces types. Concrete types are used to store data into a section of memory. They can be simple like the built-in type int which stores an integer, or more complex like a struct type that stores information about a domain model like an order for a shopping website.
+	</p>
+	<p>
+        Interface types don't represent data, but instead declare functionality. An interface defines a function or set of functions that must be implemented in order for a type to satisfy the interface, and therefore be used in code that expects that particular interface. That's a pretty obtuse definition, to be certain, so we'll leave interfaces for the second half of this chapter where some concrete examples will make interfaces more clear.
+	</p>
+									</div>
+
+									<div class="showcase text active" data-showcase="chapter-6">
+										<h4>Chapter 6</h4>
+    <p>
+        Many programs can be written as one linear path of code that performs a single task and completes. When this is possible, always choose this option because these types of programs are usually much simpler to write and maintain. However, there are times when executing multiple tasks concurrently has greater benefit. One example is with a web service that can receive multiple requests for data on individual sockets at the same time. Each socket request is unique and can be independently processed from any other. Having the ability to execute requests concurrently can dramatically improve the performance of these types of systems. With this in mind, the language designers built concurrency directly into the language and runtime.
+	</p>
+	<p>
+        When a function is created as a goroutine, it is treated as an independent unit of work that gets scheduled and then executed on an available processor. The Go runtime has a sophisticated piece of software called the scheduler that manages all the goroutines that are created and need processor time. The scheduler is special because it sits on top of the operating system and controls everything related to the running of goroutines. No scheduling is done by the operating system. Having the runtime manage concurrency and not the operating system gives the runtime an advantage. It can maintain and control the state and memory requirements of each goroutine with greater efficiency which results in better overall performance.
+	</p>
+									</div>
+
+									<div class="showcase text active" data-showcase="chapter-7">
+										<h4>Chapter 7</h4>
+    <p>
+        In chapter 6 we learned what concurrency was, how channels behave and reviewed code that showed concurrency in action. In this chapter, we will extend that knowledge by reviewing more code. We will review three packages that implement different concurrency patterns that you can use in your own projects. Each package provides a practical perspective on the use of concurrency and channels and how they can make concurrent programs easier to write and reason about.
+	</p>
+									</div>
+
+									<div class="showcase text active" data-showcase="chapter-8">
+										<h4>Chapter 8</h4>
+    <p>
+        What is the Go standard library and why is it important? The Go standard library is a set of core packages that enhance and extend the language. These packages add to the number of different types of programs you can write without the need to build your own packages or download packages others have published. Since these packages are tied to the language, they come with some special guarantees:
+	</p>
+	<p>
+    These guarantees make the standard library special and something you want to leverage as much as possible. By using packages from the standard library, you make it easier on yourself to manage and have reliability in your own code. This is because you don't have to worry if your program is going to break between release cycles nor do you have to manage these dependencies.
+	</p>
+									</div>
+
 								</div>
 							</div>
 
 							<!-- Selector -->
 							<div class="six columns">
-								<div class="selector">
+								<div class="selector" style="height: 418px; padding-right: 20px; overflow: scroll;">
 									<h1>Choose a chapter</h1>
 									<ul>
 										<li data-showcase="chapter-1" class="active"><h3>Chapter I</h3> - Introducing Go<span class="active-bg"></span></li>
 										<li data-showcase="chapter-2"><h3>Chapter II</h3> - Go Quick Start<span class="active-bg"></span></li>
+										<li data-showcase="chapter-3"><h3>Chapter III</h3> - Packaging and Tooling<span class="active-bg"></span></li>
+										<li data-showcase="chapter-4"><h3>Chapter IV</h3> - Arrays, Slices and Maps<span class="active-bg"></span></li>
+										<li data-showcase="chapter-5"><h3>Chapter V</h3> - Building User Defined Types<span class="active-bg"></span></li>
+										<li data-showcase="chapter-6"><h3>Chapter VI</h3> - Concurrency<span class="active-bg"></span></li>
+										<li data-showcase="chapter-7"><h3>Chapter VII</h3> - Concurrency Patterns<span class="active-bg"></span></li>
+										<li data-showcase="chapter-8"><h3>Chapter VIII</h3> - Standard Library<span class="active-bg"></span></li>
 									</ul>
 								</div>
 							</div>
@@ -570,7 +633,7 @@
 						<!-- Price Table -->
 						<div class="five columns price-table">
 							<h2>eBook</h2>
-							<h3>$31.99</h3>
+							<h3>$35.99</h3>
 							<ul>
 								<li>Electronic Version</li>
 								<li>Includes downloadable code</li>
@@ -583,7 +646,7 @@
 						<!-- Price Table Large -->
 						<div class="six columns price-table large">
 							<h2>eBook + pBook</h2>
-							<h3>$39.99</h3>
+							<h3>$44.99</h3>
 							<ul>
 								<li>Electronic and Print Version (when available)</li>
 								<li>Includes downloadable code</li>
@@ -638,14 +701,7 @@
 							<p>Erik created many of the projects that evolved out of Skynet, most notably <a href="https://github.com/skynetservices/skydns" target="_blank">SkyDNS</a>.  Erik has been a full-time Go developer since 2011.  Previously, Erik worked on large web projects like Disney's online reservation system. <a href="http://twitter.com/erikstmartin" target="_blank">@erikstmartin</a></p>
 							<h2>William Kennedy </h2>
 							<p>
-								William Kennedy is a managing partner at <a href="http://www.ardanstudios.com" target="_blank">Ardan Studios</a> in Miami, FL, a mobile
-								and web app development company. Bill is also the author of the blog <a href="http://goinggo.net" target="_blank">GoingGo.Net</a> and the
-								organizer for the <a href="http://www.meetup.com/Go-Miami" target="_blank">Go-Miami</a> and <a href="http://www.meetup.com/Miami-MongoDB-Meetup" target="_blank">Miami MongoDB</a>
-								meetups in Miami. Bill has been a software developer for over two decades developing back end systems in C, C++ and C# for the
-								call center, gaming and financial industries. Bill looked for a new language in 2013 that would allow him to develop back end
-								systems in Linux and found Go. He has never looked back. He has been married since 2005 and he and his wife enjoy their five kids,
-								four cats, one dog and all the wild animals who have found a home on the Kennedy compound.<br /><br />
-								You can reach Bill on Twitter at <a href="http://twitter.com/goinggodotnet" target="_blank">@goinggodotnet</a>
+								William Kennedy is a managing partner at <a href="http://www.ardanstudios.com" target="_blank">Ardan Studios</a> in Miami, FL, a mobile, web app and systems development company. He is also a co-author of the book Go In Action , the author of the blog <a href="http://goinggo.net" target="_blank">GoingGo.Net</a>  and the organizer for the <a href="http://www.meetup.com/Go-Miami" target="_blank">Go</a>  and <a href="http://www.meetup.com/Miami-MongoDB-Meetup" target="_blank">MongoDB</a> meetup in Miami. Bill is focused on Go education and through his new venture <a href="http://www.ardanlabs.com" target="_blank">Ardan Labs</a>, Bill can often be found talking at conferences and giving workshops both locally and over hangouts. He always finds time to work with individuals and groups who want to take their Go knowledge, blogging and coding skills to the next level. <a href="http://twitter.com/goinggodotnet" target="_blank">@goinggodotnet</a>
 							</p>
 						</div>
 
